@@ -1,0 +1,70 @@
+package exercicioDoCurso;
+import java.util.Scanner;
+
+public class calc {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("Escolha uma opção:");
+            System.out.println("1 - Soma");
+            System.out.println("2 - Multiplicação");
+            System.out.println("3 - Divisão");
+            System.out.println("4 - Subtração");
+            System.out.println("0 - Sair");
+            System.out.println("input: ");
+
+            int opcao = sc.nextInt();
+
+            if (opcao == 0) {
+                System.out.println("Encerrando :/");
+                break;
+            }
+            else if (opcao == 1) {
+                System.out.println("Digite o primeiro numero para somar :3 : ");
+                double n1 = sc.nextDouble();
+
+                System.out.println("Digite o segundo numero para somar :3 : ");
+                double n2 = sc.nextDouble();
+
+                double total = n1 + n2;
+
+                System.out.println("A soma de: " + n1 + " + " + n2 + " = " + total);
+        } else if (opcao == 2) {
+
+                System.out.println("Digite o primeiro numero para multiplicar :D : ");
+                double n1 = sc.nextDouble();
+
+                System.out.println("Digite o segundo numero para multiplicar :D : ");
+                double n2 = sc.nextDouble();
+
+                double total = n1 * n2;
+
+                System.out.println("O resultado de: " + n1 + " x " + n2 + " = " + total);
+            }else if (opcao == 3) {
+
+                System.out.println("Digite o primeiro numero para dividir >:( : ");
+                double n1 = sc.nextDouble();
+
+                System.out.println("Digite o segundo numero para dividir >:( : ");
+                double n2 = sc.nextDouble();
+
+                double total = n1 / n2;
+
+                System.out.println("O resultado de: " + n1 + " / " + n2 + " = " + total);
+            }else if (opcao == 4){
+
+                    System.out.println("Digite o primeiro numero para subtração :) : ");
+                    double n1 = sc.nextDouble();
+
+                    System.out.println("Digite o segundo numero para subtração :) : ");
+                    double n2 = sc.nextDouble();
+
+                    double total = n1 - n2;
+
+                    System.out.println("O resultado de: " + n1 + " - " + n2 + " = " + total);
+            }
+        }
+    }
+}
